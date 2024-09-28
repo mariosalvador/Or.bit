@@ -31,15 +31,12 @@ async function seed() {
         createdAt: new Date()
       },
       {
-        goalId:  getIdGoals[1].id,
-        createdAt: days.add(1,'day').toDate()
+        goalId: getIdGoals[1].id,
+        createdAt: days.add(1, 'day').toDate()
       },
     ]
   )
-
-
-
-
+  
 }
 
-seed().finally(()=>client.end());
+seed().finally(() => client.end());
